@@ -12,6 +12,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="client.css" />
+  <script src="discount.js" defer></script>
 </head>
 
 <body>
@@ -69,6 +70,49 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eligendi mollitia neque quia beatae suscipit
       similique eum atque ab aliquid fugit assumenda distinctio nihil, itaque quis animi perferendis impedit at!</p>
     <button type="button" class="btn btn-primary"><i class="bi bi-bag"></i> Order Now!</button>
+  </div>
+
+  <div class="row p-2 m-2">
+    <div class="col px-2 py-4">
+      <h3>Tis the seasoning</h3>
+      <div class="mb-4">
+        Order today! Save 12.5% on Chef Anton's Italian Seasoning.
+        You don't want to make Chef Anton mad, do you?
+      </div>
+      <i>Discount expires: 2/25/2025</i><br />
+      <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Chef Anton's Italian Seasoning" data-product-code="1234">Discount Code</a>
+    </div>
+    <div class="col px-2 py-4">
+      <h3>Best Grilling Tools</h3>
+      <div class="mb-4">
+        Get your hands on the best grilling tools! Enjoy 15% off today on all BBQ accessories.
+        Don't miss out on this smoky deal!
+      </div>
+      <i>Discount expires: 2/20/2025</i><br />
+      <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Grill tools" data-product-code="5678">Discount Code</a>
+    </div>
+    <div class="col px-2 py-4">
+      <h3>Spicy Delights</h3>
+      <div class="mb-4">
+        Spice up your life! Save 10% on our signature hot sauces.
+        Heat things up in the kitchen with these flavors!
+      </div>
+      <i>Discount expires: 3/01/2025</i><br />
+      <i class="bi bi-receipt"></i><a href="#" class="discount" data-product="Spicy Delight" data-product-code="9101112">Discount Code</a>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+      <div id="toast-header" class="toast-header">
+        <strong class="me-auto">Product</strong>
+        <small class="text-body-secondary">discount title</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div id="toast-body" class="toast-body">
+        Discount Code: 1234
+      </div>
+    </div>
   </div>
 </body>
 
